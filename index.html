@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <title>Smart</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/splide.min.css">
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="head row">
+          <div class="logo"><img src="img/logo.png" alt="logo"></div>
+          <nav class="menu">
+            <ul> 
+              <li> <a href=""> Home</a></li>
+              <li> <a href=""> About Us</a></li>
+              <li><a href=""> Blog</a></li>
+            </ul>
+          </nav>
+          <div class="menu-burger"> 
+            <div class="header-mobile">
+              <input id="toggle" type="checkbox" style="display:none;">
+              <label class="toggle-btn toggle-btn__cross" for="toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </label>
+              <nav>
+                <div class="mobile-logo"><img src="img/logo.png" alt="logo"></div>
+                <ul> <a class="mobile-btn btn pulse-animation" href="">Order Now</a>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div><a class="orderbtn btn pulse-animation" href="">Order Now</a>
+        </div>
+        <div class="header-title">
+          <h1>Lorem ipsum dolor sit amet, consectetur </h1>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</h3>
+        </div>
+        <div class="header-arrow"> <img src="img/arrow.png" alt="arrow"></div>
+        <div class="header-order-block"> 
+          <h2>Place your order </h2>
+          <form class="header-form">
+            <input type="text" id="fname" placeholder="Topic">
+            <select name="datalist">
+              <option value="Essay">Essay</option>
+              <option value="Essay2">Essay</option>
+              <option value="Essay3">Essay3</option>
+            </select>
+            <select name="datanumber">
+              <option value="275">275</option>
+              <option value="300">300</option>
+              <option value="400">400</option>
+            </select>
+          </form><a class="btn pulse-animation" href="">Order Now</a>
+        </div>
+      </div>
+    </header>
+    <main class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col"> 
+            <h1>Testimonials</h1>
+          </div>
+        </div>
+      </div>
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide"> 
+              <div class="splide__text"> When I was stuck with my essay writing and thought that there is no way out, you guys appeared out of the blue! Your writing team deserves appreciation. I cannot imagine my student life without your competent assistance. Thank you!</div>
+              <hr class="splide__line">
+              <div class="splide__name">Andrey L.</div>
+            </li>
+            <li class="splide__slide"> 
+              <div class="splide__text"> I am a returning customer of this online writing service. I have been using this site from High school and I must admit that my writer has never let me down. Moreover, I have always received a good grade on all papers ordered hereou!</div>
+              <hr class="splide__line">
+              <div class="splide__name">Kristy T.</div>
+            </li>
+            <li class="splide__slide"> 
+              <div class="splide__text"> I have tried a lot of online writing services and I stopped by this website, because the quality of the papers written here was above average. Moreover, they have affordable prices and good discounts for customers. I highly recommend you to try this service and you will not be disappointed.</div>
+              <hr class="splide__line">
+              <div class="splide__name">Smith S.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row btn-row"><a class="btn pulse-animation" href="">Add Testimonial</a></div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </footer>
+    <script src="js/splide.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      new Splide( '.splide',{
+        type: "loop",        
+        autoplay: true,
+        interval: 4000,
+        speed: 800, 
+        'arrowPath': 'M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111 C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587 c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z',
+      
+      
+        gap: "75px",
+        perPage: 2.3,
+        focus: 'center',
+        breakpoints : {
+        '768': {
+          perPage: 1.5,
+        },
+        '576': {
+          perPage: 1,
+        }
+        },
+      } ).mount();
+    </script>
+  </body>
+</html>
